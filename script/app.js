@@ -51,7 +51,6 @@ const productBtns = document.querySelectorAll('.wrapper__list-btn'),
 
 productBtns.forEach(btn => {
     btn.addEventListener('click', () => {
-        // closest('селектор') - определяет ближайшего родителя дочернего элемента
         plusOrMinus(btn)
     })
 })
@@ -62,7 +61,6 @@ function plusOrMinus(btn) {
     products[parentId].amount++
     basket()
 }
-// дикомпозиция это разбиение одной задачи на много более маленьких задач
 
 function basket() {
     const productsArray = []
@@ -142,7 +140,6 @@ closeBasketModal.addEventListener('click', () => {
 })
 
 
-// window - обьект окна браузера 
 
 
 window.addEventListener('click', e => {
